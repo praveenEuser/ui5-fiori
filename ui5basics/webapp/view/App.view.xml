@@ -1,0 +1,117 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName= "bbs.controller.App" 
+          xmlns:mvc = "sap.ui.core.mvc" 
+          xmlns ="sap.m" 
+          xmlns:form="sap.ui.layout.form" 
+          xmlns:t="sap.ui.table"
+>
+
+    
+
+    <t:Table rows = "{/empTab}" visibleRowCount="5" selectionMode="Single" rowSelectionChange="oRowClick">
+        <t:columns>
+            <t:Column >
+                <t:label>
+                    <Label text="{i18n>ee}"></Label>
+                </t:label>
+                <t:template>
+                    <Text text="{empId}"></Text>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="{i18n>XLBL_EMPNAME}"></Label>
+                </t:label>
+                <t:template>
+                    <Input value="{path : 'empName', formatter: '.formatter.myformatter'}"></Input>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Salary"></Label>
+                </t:label>
+                <t:template>
+                    <Text text="{
+                        parts: [{path: 'salary'},{path: 'currency'}],
+                        formatter: '.formatter.cfort'
+                    }"/>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Currency"></Label>
+                </t:label>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Gender"></Label>
+                </t:label>
+                <t:template>
+                    <Image src="{gender}" width="40px" height="40px"></Image>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Smoking"></Label>
+                </t:label>
+                <t:template>
+                    <CheckBox selected="{smoke}"></CheckBox>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="{i18n>XLBL_MSTAT}"></Label>
+                </t:label>
+                <t:template>
+                    <Select selectedKey="{m_status}">
+                        <items>
+                            <core:Item text="Married" key="Yes"/>
+                            <core:Item text="Single" key="No"/>
+                        </items>
+                    </Select>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Rating"></Label>
+                </t:label>
+                <t:template>
+                    <RatingIndicator value="{rating}"></RatingIndicator>
+                </t:template>
+            </t:Column>
+            <t:Column >
+                <t:label>
+                    <Label text="Joining Date"></Label>
+                </t:label>
+                <t:template>
+                    <DatePicker value="{path : 'joined', formatter: '.formatter.datefot'}"></DatePicker>
+                </t:template>
+            </t:Column>
+        </t:columns>
+    </t:Table>
+
+    <form:SimpleForm editable="true" id="idSimpF">
+        <form:title>
+            <core:Title text="Employee Details" icon="sap-icon://customer"/>
+        </form:title>
+        <form:content>
+            <Label text="{i18n>ee}" />
+            <Input id="idEmpId" width="5%" value="{empId}" enabled="{/empStr/hunk}"/>
+            <Label text="Employee Name" />
+            <Input id="idEmpName" width="20%" value="{empName}" enabled="{/empStr/hunk}"/>
+            <Label text="Employee Salary" />
+            <Input id="idEmpSal" width="10%" value="{salary}" enabled="{/empStr/hunk}"/>
+            <Label text="Currency"/>
+            <Input id="idEmpCurr" width="5%" value="{currency}" enabled="{/empStr/hunk}" />
+            <Label />
+            <Button id="idBtn" text="Change Status" press="onLock" width="100%"/>
+            <Button id="idBtn2" text="{i18n>XBUT_FLIP}" press="onFlip" width="50%"/>
+        </form:content>
+    </form:SimpleForm>
+
+    <!-- <Input id="idText" placeholder="Enter Employee ID"/>
+    <Input id="idText1" placeholder="Enter Employee Name"/>
+    <Input id="idText2" placeholder="Enter Employee Salary"/>
+    <Input id="idText3" placeholder="Enter Employee Currency"/>
+    <Button id="oidBtn" press="onBtnClick" text="Submit" icon="sap-icon://home"/> -->
+
+</mvc:View>

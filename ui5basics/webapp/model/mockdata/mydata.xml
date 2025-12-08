@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<data>
+    <empStr>
+        <empNo>7000</empNo>
+    </empStr>
+    <empTable>
+        <row>
+           <empNo>100</empNo> 
+        </row>
+        <row>
+           <empNo>200</empNo> 
+        </row>     
+    </empTable>
+</data>

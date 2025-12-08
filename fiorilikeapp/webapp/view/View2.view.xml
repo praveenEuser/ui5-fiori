@@ -1,0 +1,7 @@
+<mvc:View controllerName= "sasu.controller.View2" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m">
+
+    <Button  text="Back" icon="sap-icon://arrow-left" press="onBack"/>
+
+</mvc:View>

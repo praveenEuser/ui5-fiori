@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_fiori_3_dark"
+        data-sap-ui-resourceroots='{
+            "bbs" : "./"
+        }'
+        data-sap-ui-bindingSyntax= "complex"
+    ></script>
+
+    <script>
+        
+        // var oView = new sap.ui.view({
+        //     viewName : "bbs.view.Main",
+        //     type: "JS"
+        // })
+        // oView.placeAt("content")
+
+        var oView1 = new sap.ui.view({
+            viewName : "bbs.view.App",
+            type: sap.ui.core.mvc.ViewType.XML,
+        })
+        oView1.placeAt("canvas")
+
+    </script>
+</head>
+<body class="sapUiBody">
+    <div id="canvas"></div>
+    <div id="content"></div>
+    <div id="cds"></div>
+    
+</body>
+</html>

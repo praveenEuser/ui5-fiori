@@ -1,0 +1,90 @@
+{
+    "empStr": {
+        "empId": 2000,
+        "empName": "Kumar",
+        "salary": 1023,
+        "currency": "INR",
+        "hunk" : true,
+        "joined": "2025/04/11"
+    },
+    "empTab": [
+        {
+            "empId": 201,
+            "empName": "Fahrin",
+            "salary": 2200,
+            "currency": "EUR",
+            "gender": "https://www.kgbv.telangana.gov.in/KGBV/images/client1.png",
+            "smoke" : false,
+            "m_status": "Yes",
+            "rating": 5,
+            "joined": "2025/04/12"
+
+        },
+        {
+            "empId": 202,
+            "empName": "Dharani",
+            "salary": 6450,
+            "currency": "USD",
+            "gender": "https://www.kgbv.telangana.gov.in/KGBV/images/client1.png",
+            "smoke" : true,
+            "m_status": "Yes",
+            "rating": 3,
+            "joined": "2025/04/13"
+        },
+        {
+            "empId": 203,
+            "empName": "Bharathi",
+            "salary": 7874,
+            "currency": "INR",
+            "gender": "https://cdn-icons-png.flaticon.com/512/4042/4042422.png",
+            "smoke" : true,
+            "m_status": "No",
+            "rating": 3.5,
+            "joined": "2025/04/14"
+        },
+        {
+            "empId": 204,
+            "empName": "Vinitha",
+            "salary": 4542,
+            "currency": "SGL",
+            "gender": "https://cdn-icons-png.flaticon.com/512/4042/4042422.png",
+            "smoke" : false,
+            "m_status": "Yes",
+            "rating": 4,
+            "joined": "2025/04/15"
+        },
+        {
+            "empId": 205,
+            "empName": "Rangan",
+            "salary": 5643,
+            "currency": "EUR",
+            "gender": "https://www.kgbv.telangana.gov.in/KGBV/images/client1.png",
+            "smoke" : false,
+            "m_status": "No",
+            "rating": 2,
+            "joined": "2025/04/16"
+        },
+        {
+            "empId": 206,
+            "empName": "Kiran",
+            "salary": 3453,
+            "currency": "INR",
+            "gender": "https://www.kgbv.telangana.gov.in/KGBV/images/client1.png",
+            "smoke" : true,
+            "m_status": "Yes",
+            "rating": 5,
+            "joined": "2025/04/17"
+        },
+        {
+            "empId": 207,
+            "empName": "Sandhya",
+            "salary": 4533,
+            "currency": "USD",
+            "gender": "https://cdn-icons-png.flaticon.com/512/4042/4042422.png",
+            "smoke" : false,
+            "m_status": "No",
+            "rating": 2.5,
+            "joined": "2025/04/18"
+        }
+    ]
+}
