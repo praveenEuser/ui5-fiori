@@ -3,7 +3,9 @@ sap.ui.define([
 ], function(UIComponent){
     'use strict';
     return UIComponent.extend("sasu.Component",{
-        metadata: {},
+        metadata: {
+            manifest:"json"
+        },
         init: function(){
             //this line will call the base class contructor
             UIComponent.prototype.init.apply(this);

@@ -5,6 +5,10 @@ sap.ui.define([
     return Controller.extend("sasu.controller.View2",{
         oInit: function(){
 
+        },
+
+        onBack: function(){
+            this.oView.getParent().to("idView1"); //Chaining
         }
     });
 });

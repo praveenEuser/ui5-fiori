@@ -1,7 +1,66 @@
-<mvc:View controllerName= "sasu.controller.View1" 
-          xmlns:mvc="sap.ui.core.mvc" 
-          xmlns="sap.m"
->
-    
-        <Button text="Go to" icon="sap-icon://arrow-right" press="onNext"/>
+<mvc:View controllerName= "sasu.controller.View1"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:core= "sap/ui/core"
+        xmlns="sap.m">
+
+        <Page title="{i18n>XTIT}">
+                <headerContent>
+                        <Button icon="sap-icon://action" press="onNext"></Button>
+                </headerContent>
+                <content>
+                        <SearchField placeholder="Search..." id="idsrh1"></SearchField>
+                        <List id="idLST" items="{/fruits}" >
+                                <items>
+                                        <ObjectListItem icon="{image}" intro="{name}" title="{healthBenefit}" type="Active" number="{price}" numberUnit="{curr}">
+                                                <attributes>
+                                                        <ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
+                                                        <ObjectAttribute title="Season" text="{season}"></ObjectAttribute>
+                                                        <ObjectAttribute title="Taste" text="{taste}"></ObjectAttribute>
+                                                        <ObjectAttribute title="Size" text="{size}"></ObjectAttribute>
+                                                </attributes>
+                                                <firstStatus>
+                                                        <ObjectStatus text="Available" state="Success"></ObjectStatus>
+                                                </firstStatus>
+                                        </ObjectListItem>
+                                        <!-- <DisplayListItem label="Dell Laptop" value="4GB RAM"></DisplayListItem>
+                                        
+                                        <StandardListItem icon="https://png.pngtree.com/png-vector/20250304/ourmid/pngtree-sleek-modern-laptop-with-high-resolution-display-png-image_15711292.png"
+                                                        title="ASUS Laptop" description="Asus is Most Powerful Laptop"></StandardListItem>
+                                        
+                                        <InputListItem>
+                                                <HBox >
+                                                        <Label text="What's your specs Expectation ? " ></Label>
+                                                        <Input />
+                                                </HBox>
+                                        </InputListItem>
+
+                                        <CustomListItem >
+                                                <Label text="Are u ready to by laptop ?"></Label>
+                                                <Switch />
+                                        </CustomListItem>
+
+                                        <ObjectListItem title="Under 20K Laptops" intro="Laptops" icon="https://pngfre.com/wp-content/uploads/laptop-png-from-pngfre-22.png"
+                                        number="18k INR" numberUnit="One laptop">
+                                                <attributes>
+                                                        <ObjectAttribute title="Color" text="Black, Violet"></ObjectAttribute>
+                                                        <ObjectAttribute title="Brand" text="ASUS, DELL, ACER"></ObjectAttribute>
+                                                </attributes>
+                                                <firstStatus>
+                                                        <ObjectStatus text="Out of Stock" state="Error"></ObjectStatus>
+                                                </firstStatus>
+                                                <secondStatus>
+                                                        <ObjectStatus text="Available" state="Success"></ObjectStatus>
+                                                </secondStatus>
+                                        </ObjectListItem>
+
+                                        <FeedListItem icon="https://cdn.britannica.com/48/222648-050-F4D0A2D8/President-of-India-A-P-J-Abdul-Kalam-2007.jpg" sender="Kalam" text="Hey! Praveen How are you ?"
+                                        timestamp="Thu 8/4/2025"></FeedListItem>
+
+                                        <ActionListItem press="onAction1" text="Order Now"></ActionListItem> -->
+
+                                </items>
+                        </List>
+                </content>
+        </Page>
+
 </mvc:View>

@@ -1,0 +1,323 @@
+{
+  "fruits": [
+    {
+      "name": "grapes",
+      "color": "purple",
+      "taste": "alkaline",
+      "size": "small",
+      "price": 55,
+      "curr": "INR",
+      "healthBenefit": "high in antioxidants, may prevent chronic diseases",
+      "season": "summer",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/027/125/716/small/grapes-isolated-on-transparent-background-grape-clip-art-generative-ai-png.png"
+    },
+    {
+      "name": "mango",
+      "color": "orange-yellow",
+      "taste": "sweet",
+      "size": "medium",
+      "price": 120,
+      "curr": "INR",
+      "healthBenefit": "rich in vitamin A and C, boosts immunity",
+      "season": "summer",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/795/003/small/mango-fruit-tropical-transparent-png.png"
+    },
+    {
+      "name": "apple",
+      "color": "red",
+      "taste": "sweet-tart",
+      "size": "medium",
+      "price": 180,
+      "curr": "INR",
+      "healthBenefit": "improves heart health, supports weight loss",
+      "season": "winter",
+      "image": "https://png.pngtree.com/png-clipart/20231016/original/pngtree-fresh-fruit-apple-png-image_13318561.png"
+    },
+    {
+      "name": "banana",
+      "color": "yellow",
+      "taste": "sweet",
+      "size": "medium",
+      "price": 40,
+      "curr": "INR",
+      "healthBenefit": "high in potassium, supports digestion",
+      "season": "all",
+      "image": "https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-banana-skewers-three-fruits-png-image_5944328.png"
+    },
+    {
+      "name": "watermelon",
+      "color": "green-red",
+      "taste": "refreshing sweet",
+      "size": "large",
+      "price": 25,
+      "curr": "INR",
+      "healthBenefit": "hydrating fruit, rich in lycopene",
+      "season": "summer",
+      "image": "https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-watermelon-png-image_15963963.png"
+    },
+    {
+      "name": "orange",
+      "color": "orange",
+      "taste": "citrus sweet",
+      "size": "medium",
+      "price": 90,
+      "curr": "INR",
+      "healthBenefit": "boosts vitamin C, good for skin",
+      "season": "winter",
+      "image": "https://png.pngtree.com/element_our/png/20180903/orange-png-png_75700.jpg"
+    },
+    {
+      "name": "pineapple",
+      "color": "yellow",
+      "taste": "sweet-tart",
+      "size": "large",
+      "price": 70,
+      "curr": "INR",
+      "healthBenefit": "contains bromelain, aids digestion",
+      "season": "summer",
+      "image": "https://png.pngtree.com/png-clipart/20250123/original/pngtree-fresh-pineapple-with-slices-and-splash-of-juice-in-photorealistic-detail-png-image_20269263.png"
+    },
+    {
+      "name": "papaya",
+      "color": "orange",
+      "taste": "mild sweet",
+      "size": "large",
+      "price": 45,
+      "curr": "INR",
+      "healthBenefit": "rich in enzymes, good for digestion",
+      "season": "all",
+      "image": "https://png.pngtree.com/png-clipart/20250108/original/pngtree-vibrant-illustration-of-a-fresh-papaya-png-image_18953709.png"
+    },
+    {
+      "name": "strawberry",
+      "color": "red",
+      "taste": "sweet-tart",
+      "size": "small",
+      "price": 220,
+      "curr": "INR",
+      "healthBenefit": "rich in antioxidants and vitamin C",
+      "season": "winter",
+      "image": "https://e7.pngegg.com/pngimages/983/762/png-clipart-strawberry-fruit-strawberry-thumbnail.png"
+    },
+    {
+      "name": "kiwi",
+      "color": "brown-green",
+      "taste": "tangy sweet",
+      "size": "small",
+      "price": 30,
+      "curr": "INR",
+      "healthBenefit": "boosts immunity, high vitamin C",
+      "season": "winter",
+      "image": "https://png.pngtree.com/png-clipart/20191115/ourmid/pngtree-fresh-kiwi-fruits-isolated-on-transparent-png-image_1952934.jpg"
+    },
+    {
+      "name": "pomegranate",
+      "color": "red",
+      "taste": "sweet",
+      "size": "medium",
+      "price": 160,
+      "curr": "INR",
+      "healthBenefit": "rich in antioxidants, good for heart",
+      "season": "all",
+      "image": "https://static.vecteezy.com/system/resources/previews/029/333/360/non_2x/pomegranate-transparent-background-png.png"
+    },
+    {
+      "name": "guava",
+      "color": "green",
+      "taste": "sweet-sour",
+      "size": "medium",
+      "price": 60,
+      "curr": "INR",
+      "healthBenefit": "improves digestion, rich in fiber",
+      "season": "winter",
+      "image": "https://png.pngtree.com/png-vector/20250219/ourmid/pngtree-isolated-guava-fruit-one-whole-green-and-a-sliced-half-with-png-image_15504785.png"
+    },
+    {
+      "name": "blueberry",
+      "color": "blue",
+      "taste": "sweet",
+      "size": "small",
+      "price": 350,
+      "curr": "INR",
+      "healthBenefit": "supports brain health, rich in antioxidants",
+      "season": "winter",
+      "image": "https://img.freepik.com/free-psd/single-juicy-blueberry-closeup_191095-85649.jpg?semt=ais_hybrid&w=740&q=80"
+    },
+    {
+      "name": "pear",
+      "color": "green",
+      "taste": "sweet",
+      "size": "medium",
+      "price": 140,
+      "curr": "INR",
+      "healthBenefit": "improves digestive health, rich in fiber",
+      "season": "winter",
+      "image": "https://png.pngtree.com/png-vector/20241229/ourmid/pngtree-pear-slices-and-whole-isolated-on-transparent-background-png-image_14977840.png"
+    },
+    {
+      "name": "cherry",
+      "color": "red",
+      "taste": "sweet-tart",
+      "size": "small",
+      "price": 400,
+      "curr": "INR",
+      "healthBenefit": "reduces inflammation, rich in antioxidants",
+      "season": "summer",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/041/444/721/small/ai-generated-ripe-cherries-with-cherries-leaves-on-the-floor-healthy-organic-berry-natural-ingredients-concept-ai-generated-transparent-with-shadow-png.png"
+    }
+  ],
+  "supplier": [
+    {
+      "name": "A S fruts trivnatram",
+      "sinceWhen": "2018",
+      "contactNo": "+917025387860",
+      "person": "Ashique Sha",
+      "noOfStores": 5,
+      "specialty": ["grapes", "apple", "banana"],
+      "city": "Thiruvananthapuram"
+    },
+    {
+      "name": "Bharath Enterprises",
+      "sinceWhen": "2020",
+      "contactNo": "+919966856992",
+      "person": "Bharath Kumar",
+      "noOfStores": 11,
+      "specialty": ["mango"],
+      "city": "Kurnool"
+    },
+    {
+      "name": "Fresh Valley Traders",
+      "sinceWhen": "2015",
+      "contactNo": "+918884557321",
+      "person": "Rahul Menon",
+      "noOfStores": 8,
+      "specialty": ["orange", "pineapple"],
+      "city": "Kochi"
+    },
+    {
+      "name": "Royal Fruits Hub",
+      "sinceWhen": "2017",
+      "contactNo": "+917774003498",
+      "person": "Sanjay Reddy",
+      "noOfStores": 14,
+      "specialty": ["watermelon", "papaya"],
+      "city": "Hyderabad"
+    },
+    {
+      "name": "Green Basket Suppliers",
+      "sinceWhen": "2014",
+      "contactNo": "+919487326551",
+      "person": "Ajith Varma",
+      "noOfStores": 6,
+      "specialty": ["apple", "kiwi"],
+      "city": "Mysuru"
+    },
+    {
+      "name": "Daily Fresh Distributors",
+      "sinceWhen": "2019",
+      "contactNo": "+916302447890",
+      "person": "Prasanna Rao",
+      "noOfStores": 4,
+      "specialty": ["banana", "grapes"],
+      "city": "Bengaluru"
+    },
+    {
+      "name": "Sree Venkateshwara Fruits",
+      "sinceWhen": "2016",
+      "contactNo": "+919908774321",
+      "person": "Venkatesh G",
+      "noOfStores": 10,
+      "specialty": ["mango", "papaya"],
+      "city": "Tirupati"
+    },
+    {
+      "name": "Golden Orchard Traders",
+      "sinceWhen": "2013",
+      "contactNo": "+917644508732",
+      "person": "Rohit Sharma",
+      "noOfStores": 7,
+      "specialty": ["pear", "blueberry"],
+      "city": "Pune"
+    },
+    {
+      "name": "Nature’s Best Fruits",
+      "sinceWhen": "2021",
+      "contactNo": "+919945667210",
+      "person": "Arun Joseph",
+      "noOfStores": 3,
+      "specialty": ["strawberry"],
+      "city": "Ooty"
+    },
+    {
+      "name": "Healthy Harvest Suppliers",
+      "sinceWhen": "2012",
+      "contactNo": "+918126443980",
+      "person": "Sunil Kapoor",
+      "noOfStores": 12,
+      "specialty": ["pomegranate", "orange"],
+      "city": "Jaipur"
+    }
+  ],
+  "cities": [
+    {
+      "cityName": "Thiruvananthapuram",
+      "state": "Kerala",
+      "population": 784153,
+      "famousFor": "grapes"
+    },
+    {
+      "cityName": "Kurnool",
+      "state": "Andhra Pradesh",
+      "population": 460184,
+      "famousFor": "mango"
+    },
+    {
+      "cityName": "Madurai",
+      "state": "Tamil Nadu",
+      "population": 1561129,
+      "famousFor": "jasmine flowers"
+    },
+    {
+      "cityName": "Nagpur",
+      "state": "Maharashtra",
+      "population": 2405665,
+      "famousFor": "oranges"
+    },
+    {
+      "cityName": "Shimla",
+      "state": "Himachal Pradesh",
+      "population": 206575,
+      "famousFor": "apples"
+    },
+    {
+      "cityName": "Mysuru",
+      "state": "Karnataka",
+      "population": 920550,
+      "famousFor": "sandalwood"
+    },
+    {
+      "cityName": "Lucknow",
+      "state": "Uttar Pradesh",
+      "population": 3382000,
+      "famousFor": "tunday kabab"
+    },
+    {
+      "cityName": "Amritsar",
+      "state": "Punjab",
+      "population": 1132383,
+      "famousFor": "golden temple"
+    },
+    {
+      "cityName": "Pune",
+      "state": "Maharashtra",
+      "population": 3124458,
+      "famousFor": "education & IT"
+    },
+    {
+      "cityName": "Jaipur",
+      "state": "Rajasthan",
+      "population": 3073350,
+      "famousFor": "pink city"
+    }
+  ]
+}

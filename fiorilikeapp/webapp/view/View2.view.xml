@@ -2,6 +2,15 @@
           xmlns:mvc="sap.ui.core.mvc" 
           xmlns="sap.m">
 
-    <Button  text="Back" icon="sap-icon://arrow-left" press="onBack"/>
+    <Page title="Information" showNavButton="true" navButtonPress="onBack">
+        <footer>
+            <Toolbar >
+                <ToolbarSpacer/>
+                <Button text="Order" type="Accept"></Button>
+                <Button text="Cancel" type="Reject"></Button>
+            </Toolbar>
+        </footer>
+    </Page>
+    
 
 </mvc:View>
