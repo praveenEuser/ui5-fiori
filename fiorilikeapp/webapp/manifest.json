@@ -31,6 +31,46 @@
             "compact": true,
             "cozy": true
         },
+        "rootView":{
+            "id": "idAppView",
+            "type": "XML",
+            "viewName": "sasu.view.App"
+        },
+        "routing": {
+            "config":{
+                "viewPath": "sasu.view",
+                "viewType": "XML",
+                "controlId": "appCon",
+                "clearControlAggregation": true
+            },
+            "routes":[
+                {
+                    "name": "master",
+                    "target":["joe","detail"],
+                    "pattern": ""
+                },
+                {
+                    "name": "detail",
+                    "target":["joe","modi"],
+                    "pattern": "fruits/{fruitId}"
+                }
+
+        ],
+            "targets": {
+                "joe":{
+                    "viewName": "View1",
+                    "controlAggregation": "masterPages"
+                },
+                "detail":{
+                    "viewName": "Empty",
+                    "controlAggregation": "detailPages"
+                },
+                "modi":{
+                    "viewName": "View2",
+                    "controlAggregation": "detailPages"
+                }
+            }
+        },
         "library": {
             "i18n":true,
             "css":"css/mystyle.css"

@@ -1,0 +1,10 @@
+<mvc:View controllerName= "sasu.controller.Empty" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m">
+
+    <Page title="Detail Page">
+        <Image src="https://raw.githubusercontent.com/UI5/cli/main/docs/images/UI5_logo_wide.png" ></Image>
+    </Page>
+    
+
+</mvc:View>

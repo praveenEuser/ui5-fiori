@@ -8,14 +8,27 @@
                         <Button icon="sap-icon://action" press="onNext"></Button>
                 </headerContent>
                 <content>
-                        <SearchField placeholder="Search..." id="idsrh1"></SearchField>
-                        <List id="idLST" items="{/fruits}" >
+                        <SearchField placeholder="Search..." id="idsrh1" search="onSearch" liveChange="onSearch"></SearchField>
+                        
+                        <List id="idLST" selectionChange="onFruitSelect"  mode="SingleSelectMaster"  delete="onDlt" items="{
+                                path: '/fruits',
+                                sorter: {
+                                        path: 'name'
+                                }
+                        }" >
+                        <headerToolbar>
+                                <Toolbar >
+                                        <Title text="Fruits Lists" ></Title>
+                                        <ToolbarSpacer ></ToolbarSpacer>
+                                        <Button icon="sap-icon://delete" text="Delete" press="onDelete" type="Reject"></Button>
+                                </Toolbar>
+                        </headerToolbar>
                                 <items>
-                                        <ObjectListItem icon="{image}" intro="{name}" title="{healthBenefit}" type="Active" number="{price}" numberUnit="{curr}">
+                                        <ObjectListItem icon="{image}" intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}">
                                                 <attributes>
                                                         <ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
                                                         <ObjectAttribute title="Season" text="{season}"></ObjectAttribute>
-                                                        <ObjectAttribute title="Taste" text="{taste}"></ObjectAttribute>
+                                                        <ObjectAttribute title="Benefit" text="{healthBenefit}"></ObjectAttribute>
                                                         <ObjectAttribute title="Size" text="{size}"></ObjectAttribute>
                                                 </attributes>
                                                 <firstStatus>

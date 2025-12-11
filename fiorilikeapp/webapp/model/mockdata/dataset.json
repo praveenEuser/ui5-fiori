@@ -58,7 +58,7 @@
     {
       "name": "orange",
       "color": "orange",
-      "taste": "citrus sweet",
+      "taste": "citrus",
       "size": "medium",
       "price": 90,
       "curr": "INR",
@@ -164,7 +164,29 @@
       "healthBenefit": "reduces inflammation, rich in antioxidants",
       "season": "summer",
       "image": "https://static.vecteezy.com/system/resources/thumbnails/041/444/721/small/ai-generated-ripe-cherries-with-cherries-leaves-on-the-floor-healthy-organic-berry-natural-ingredients-concept-ai-generated-transparent-with-shadow-png.png"
-    }
+    },
+    {
+    "name": "blackberry",
+    "color": "black-purple",
+    "taste": "berries",
+    "size": "small",
+    "price": 260,
+    "curr": "INR",
+    "healthBenefit": "rich in vitamin C and K, supports brain and heart health",
+    "season": "winter",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/012/596/115/small_2x/blackberry-with-leaves-png.png"
+  },
+  {
+    "name": "blueberry",
+    "color": "blue",
+    "taste": "berries",
+    "size": "small",
+    "price": 350,
+    "curr": "INR",
+    "healthBenefit": "supports brain health, rich in antioxidants",
+    "season": "winter",
+    "image": "https://e7.pngegg.com/pngimages/395/812/png-clipart-three-blueberries-illustration-smoothie-blueberry-blueberry-natural-foods-food-thumbnail.png"
+  }
   ],
   "supplier": [
     {

@@ -3,6 +3,7 @@
           xmlns="sap.m">
 
     <Page title="Information" showNavButton="true" navButtonPress="onBack">
+        <Text text="{name}"></Text>
         <footer>
             <Toolbar >
                 <ToolbarSpacer/>
