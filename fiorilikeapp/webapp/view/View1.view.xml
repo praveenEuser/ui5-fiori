@@ -11,10 +11,7 @@
                         <SearchField placeholder="Search..." id="idsrh1" search="onSearch" liveChange="onSearch"></SearchField>
                         
                         <List id="idLST" selectionChange="onFruitSelect"  mode="SingleSelectMaster"  delete="onDlt" items="{
-                                path: '/fruits',
-                                sorter: {
-                                        path: 'name'
-                                }
+                                path: '/ProductSet'
                         }" >
                         <headerToolbar>
                                 <Toolbar >
@@ -24,8 +21,8 @@
                                 </Toolbar>
                         </headerToolbar>
                                 <items>
-                                        <ObjectListItem icon="{image}" intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}">
-                                                <attributes>
+                                        <ObjectListItem  icon="sap-icon://product" intro="{NAME}" title="{PRODUCT_ID}" number="{PRICE}" numberUnit="{CURRENCY_CODE}">
+                                                <!-- <attributes>
                                                         <ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
                                                         <ObjectAttribute title="Season" text="{season}"></ObjectAttribute>
                                                         <ObjectAttribute title="Benefit" text="{healthBenefit}"></ObjectAttribute>
@@ -33,7 +30,7 @@
                                                 </attributes>
                                                 <firstStatus>
                                                         <ObjectStatus text="Available" state="Success"></ObjectStatus>
-                                                </firstStatus>
+                                                </firstStatus> -->
                                         </ObjectListItem>
                                         <!-- <DisplayListItem label="Dell Laptop" value="4GB RAM"></DisplayListItem>
                                         

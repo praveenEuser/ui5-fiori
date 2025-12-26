@@ -1,5 +1,5 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
+    "sasu/controller/BaseController",
     "sap/ui/model/Filter",
     "sap/m/MessageToast",   
     "sap/ui/model/FilterOperator"
@@ -16,19 +16,20 @@ sap.ui.define([
         },
 
         intital:function(oEvent){
-            debugger;
-            var fruitId = oEvent.getParameter("arguments").fruitId;
-            var sPath = '/fruits/' + fruitId;
+            //debugger;
+            //var fruitId = oEvent.getParameter("arguments").fruitId;
+            var sPath = this.extractPath(oEvent);
             var oList = this.getView().byId("idLST");
             var element = {};
             for (let i = 0; i < oList.getItems().length; i++) {
                 element = oList.getItems()[i];
                 if(element.getBindingContextPath() === sPath){
+                    oList.setSelectedItem(element);
                     break;
                 }
                 
             };
-            oList.setSelectedItem(element);
+            
         },
 
         onFruitSelect:function(oEvent){
@@ -106,7 +107,6 @@ sap.ui.define([
             }
             
         }
-
 
     });
 });

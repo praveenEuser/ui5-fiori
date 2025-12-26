@@ -1,0 +1,20 @@
+{
+    "welcomeFile": "index.html",
+    "authenticationMethod": "none",
+    "sessionTimeout": 10,
+    "routes":[
+        {
+            "authenticationType": "none",
+            "csrfProtection": false,
+            "source": "^/sap/opu/odata/sap/ZDEC_2025_SRV_01/",
+            "destination": "A4H"
+        },
+        {
+            "source":"^(.*)$",
+            "target": "$1",
+            "service":"html5-apps-repo-rt"
+        }
+        
+
+    ]
+}

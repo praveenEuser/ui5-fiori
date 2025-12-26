@@ -282,61 +282,61 @@
   ],
   "cities": [
     {
-      "cityName": "Thiruvananthapuram",
+      "name": "Thiruvananthapuram",
       "state": "Kerala",
       "population": 784153,
       "famousFor": "grapes"
     },
     {
-      "cityName": "Kurnool",
+      "name": "Kurnool",
       "state": "Andhra Pradesh",
       "population": 460184,
       "famousFor": "mango"
     },
     {
-      "cityName": "Madurai",
+      "name": "Madurai",
       "state": "Tamil Nadu",
       "population": 1561129,
       "famousFor": "jasmine flowers"
     },
     {
-      "cityName": "Nagpur",
+      "name": "Nagpur",
       "state": "Maharashtra",
       "population": 2405665,
       "famousFor": "oranges"
     },
     {
-      "cityName": "Shimla",
+      "name": "Shimla",
       "state": "Himachal Pradesh",
       "population": 206575,
       "famousFor": "apples"
     },
     {
-      "cityName": "Mysuru",
+      "name": "Mysuru",
       "state": "Karnataka",
       "population": 920550,
       "famousFor": "sandalwood"
     },
     {
-      "cityName": "Lucknow",
+      "name": "Lucknow",
       "state": "Uttar Pradesh",
       "population": 3382000,
       "famousFor": "tunday kabab"
     },
     {
-      "cityName": "Amritsar",
+      "name": "Amritsar",
       "state": "Punjab",
       "population": 1132383,
       "famousFor": "golden temple"
     },
     {
-      "cityName": "Pune",
+      "name": "Pune",
       "state": "Maharashtra",
       "population": 3124458,
       "famousFor": "education & IT"
     },
     {
-      "cityName": "Jaipur",
+      "name": "Jaipur",
       "state": "Rajasthan",
       "population": 3073350,
       "famousFor": "pink city"

@@ -1,0 +1,20 @@
+{
+	"_version": "1.18.0",
+	"sap.artifact": {
+		"id": "ns.SIMPLE",
+		"type": "workspace-template",
+		"i18n": "i18n/i18n.properties",
+		"title": "",
+		"subTitle": "",
+		"artifactVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "",
+		"info": "",
+		"description": "",
+		"tags": {
+			"keywords": [
+			]
+		}
+	}
+}

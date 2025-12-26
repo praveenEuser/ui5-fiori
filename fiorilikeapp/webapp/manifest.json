@@ -1,14 +1,29 @@
 {
-    "_version":"1.9.0",
-    "sap.app":{
+    "_version": "1.9.0",
+    "sap.app": {
         "id": "sasu",
-        "description":"{{APP_DESC}}",
+        "description": "{{APP_DESC}}",
         "applicationVersion": "1.0.0",
         "type": "application",
-        "title":"{{APP_TIT}}",
-        "i18n": "i18n/i18n.properties"
+        "title": "{{APP_TIT}}",
+        "i18n": "i18n/i18n.properties",
+        "dataSources": {
+            "PraveenService": {
+                "uri": "/sap/opu/odata/sap/ZDEC_2025_SRV_01/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/metadata.xml"
+                }
+            }
+        },
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.20.0",
+            "toolsId": "6bbf30e1-623a-4d24-9154-832aec6c0813"
+        }
     },
-    "sap.ui":{
+    "sap.ui": {
         "technology": "UI5",
         "icons": {
             "icon": "sap-icon://home"
@@ -19,71 +34,82 @@
             "tablet": true
         }
     },
-    "sap.ui5":{
+    "sap.ui5": {
         "dependencies": {
             "minUI5Version": "1.87.0",
             "libs": {
-                "sap.m":{},
-                "sap.ui.table":{} 
+                "sap.m": {},
+                "sap.ui.table": {}
             }
         },
         "contentDensities": {
             "compact": true,
             "cozy": true
         },
-        "rootView":{
+        "rootView": {
             "id": "idAppView",
             "type": "XML",
             "viewName": "sasu.view.App"
         },
         "routing": {
-            "config":{
+            "config": {
                 "viewPath": "sasu.view",
                 "viewType": "XML",
                 "controlId": "appCon",
                 "clearControlAggregation": true
             },
-            "routes":[
+            "routes": [
                 {
                     "name": "master",
-                    "target":["joe","detail"],
+                    "target": [
+                        "joe",
+                        "detail"
+                    ],
                     "pattern": ""
                 },
                 {
                     "name": "detail",
-                    "target":["joe","modi"],
+                    "target": [
+                        "joe",
+                        "modi"
+                    ],
                     "pattern": "fruits/{fruitId}"
                 }
-
-        ],
+            ],
             "targets": {
-                "joe":{
+                "joe": {
                     "viewName": "View1",
                     "controlAggregation": "masterPages"
                 },
-                "detail":{
+                "detail": {
                     "viewName": "Empty",
                     "controlAggregation": "detailPages"
                 },
-                "modi":{
+                "modi": {
                     "viewName": "View2",
                     "controlAggregation": "detailPages"
                 }
             }
         },
         "library": {
-            "i18n":true,
-            "css":"css/mystyle.css"
+            "i18n": true,
+            "css": "css/mystyle.css"
         },
         "models": {
-            "i18n":{
+            "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "uri": "i18n/i18n.properties"
             },
-                "":{
-                    "type": "sap.ui.model.json.JSONModel",
-                    "uri": "model/mockdata/dataset.json"
-                }
+            "local": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/mockdata/dataset.json"
+            },
+            "": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {},
+                "dataSource": "PraveenService",
+                "preload": true
             }
+        }
     }
 }
