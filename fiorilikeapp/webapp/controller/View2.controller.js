@@ -19,7 +19,12 @@ sap.ui.define([
         intital:function(oEvent){
             //debugger;
             var sPath = this.extractPath(oEvent);
-            this.getView().bindElement(sPath); // binding with /fruits/4 -> datam
+            this.getView().bindElement({
+                path: sPath,
+                parameters: {
+                    expand: 'To_Supplier'
+                }
+            }); // binding with /fruits/4 -> datam
         },
         oCitypopup: null,
         oSupplierpopup: null,
@@ -99,13 +104,13 @@ sap.ui.define([
                 }).then(function(oPopup) {
                     //assign the object created by system to our global variable 
                     that.oCitypopup = oPopup;
-                    that.oCitypopup.setTitle("Select City");
+                    that.oCitypopup.setTitle("Select Country");
                     that.getView().addDependent(that.oCitypopup);
                     that.oCitypopup.bindAggregation("items",{
-                        path: '/cities',
+                        path: '/SupplierSet',
                         template: new sap.m.DisplayListItem({
-                            label: '{name}',
-                            value:'{famousFor}'
+                            label: '{COUNTRY}',
+                            value:'{CITY}'
                         })
                     })
                     that.oCitypopup.setMultiSelect(false);

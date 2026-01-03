@@ -3,7 +3,9 @@
     "sap.app": {
         "id": "sasu",
         "description": "{{APP_DESC}}",
-        "applicationVersion": "1.0.0",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
         "type": "application",
         "title": "{{APP_TIT}}",
         "i18n": "i18n/i18n.properties",
@@ -73,7 +75,15 @@
                         "joe",
                         "modi"
                     ],
-                    "pattern": "fruits/{fruitId}"
+                    "pattern": "product/{prodId}"
+                },
+                {
+                    "name": "addprod",
+                    "target": [
+                        "joe",
+                        "adds"
+                    ],
+                    "pattern": "AddProduct"
                 }
             ],
             "targets": {
@@ -88,7 +98,12 @@
                 "modi": {
                     "viewName": "View2",
                     "controlAggregation": "detailPages"
+                },
+                "adds": {
+                    "viewName": "Add",
+                    "controlAggregation": "detailPages"
                 }
+
             }
         },
         "library": {

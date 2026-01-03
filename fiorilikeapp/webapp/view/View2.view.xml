@@ -6,16 +6,16 @@
 
     <Page title="Information" showNavButton="true" navButtonPress="onBack">
         <content>
-            <ObjectHeader intro="{healthBenefit}" title="{name}" icon="{image}"
-            number="{price}" numberUnit="{curr}"></ObjectHeader>
+            <ObjectHeader intro="{DESCRIPTION}" title="{PRODUCT_ID}" icon="sap-icon://product"
+            number="{PRICE}" numberUnit="{CURRENCY_CODE}"></ObjectHeader>
 
             <IconTabBar >
                 <items>
                     <IconTabFilter  icon="sap-icon://warning" text="More Info">
                         <core:Fragment fragmentName="sasu.fragments.moreInfo" type="XML"/>
-                        <core:Fragment fragmentName="sasu.fragments.moreInfo" type="XML"/>
+                        <core:Fragment fragmentName="sasu.fragments.supplierInfo" type="XML"/>
                     </IconTabFilter>
-                    <IconTabFilter iconColor="Positive" icon="sap-icon://supplier" text="Supplier">
+                    <IconTabFilter iconColor="Positive" icon="sap-icon://supplier" text="Orders">
                         <core:Fragment fragmentName="sasu.fragments.supptable" type="XML" />
                     </IconTabFilter>
                     

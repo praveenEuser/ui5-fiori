@@ -38,7 +38,7 @@ sap.ui.define([
             //Step 2: Trigger the Route
             var oSelectedfruit = oEvent.getParameter("listItem");
             this.oRouter.navTo("detail",{
-                fruitId: oSelectedfruit.getBindingContextPath().split("/")[2]
+                prodId: oSelectedfruit.getBindingContextPath().split("/")[1]
             });
         },
 
@@ -65,18 +65,18 @@ sap.ui.define([
             }
 
             //Step 2: Construct the filter object with operand and operator
-            var oFilter = new Filter("name", FilterOperator.Contains, sSearch);
-            var oFilter2 = new Filter("taste", FilterOperator.Contains, sSearch);
-            var aFilter = [oFilter, oFilter2];
+            var oFilter = new Filter("CATEGORY", FilterOperator.Contains, sSearch);
+            // var oFilter2 = new Filter("taste", FilterOperator.Contains, sSearch);
+            // var aFilter = [oFilter, oFilter2];
 
-            var oMaster = new Filter({
-                filters: aFilter,
-                and: false //It will Automatically change to OR operator
-            })
-            //Step 3: Get the list object
+            // var oMaster = new Filter({
+            //     filters: aFilter,
+            //     and: false //It will Automatically change to OR operator
+            // })
+            // //Step 3: Get the list object
             var oList = this.getView().byId("idLST");
             //Step 4: inject the filter to the list
-            oList.getBinding("items").filter(oMaster);
+            oList.getBinding("items").filter(oFilter);
         },
         onNavPress: function(){
             this.onNext();
@@ -89,6 +89,10 @@ sap.ui.define([
             var oList = oEvent.getSource();
             //Step 3: Remove the Item from List
             oList.removeItem(oSelected);
+        },
+
+        onPressMain: function(){
+            this.oRouter.navTo("addprod")
         },
 
         //Excersion

@@ -1,27 +1,22 @@
-<mvc:View controllerName= "sasu.controller.View1"
-        xmlns:mvc="sap.ui.core.mvc"
-        xmlns:core= "sap/ui/core"
-        xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap/ui/core" xmlns="sap.m" controllerName="sasu.controller.View1">
 
         <Page title="{i18n>XTIT}">
                 <headerContent>
-                        <Button icon="sap-icon://action" press="onNext"></Button>
+                        <Button icon="sap-icon://action" press="onNext"/>
                 </headerContent>
                 <content>
-                        <SearchField placeholder="Search..." id="idsrh1" search="onSearch" liveChange="onSearch"></SearchField>
+                        <SearchField placeholder="Search..." id="idsrh1" search="onSearch" liveChange="onSearch"/>
                         
-                        <List id="idLST" selectionChange="onFruitSelect"  mode="SingleSelectMaster"  delete="onDlt" items="{
-                                path: '/ProductSet'
-                        }" >
+                        <List id="idLST" selectionChange="onFruitSelect" mode="SingleSelectMaster" growing="true" growingThreshold="10" delete="onDlt" items="{                                 path: '/ProductSet'                         }">
                         <headerToolbar>
-                                <Toolbar >
-                                        <Title text="Fruits Lists" ></Title>
-                                        <ToolbarSpacer ></ToolbarSpacer>
-                                        <Button icon="sap-icon://delete" text="Delete" press="onDelete" type="Reject"></Button>
+                                <Toolbar>
+                                        <Title text="Fruits Lists"/>
+                                        <ToolbarSpacer/>
+                                        <Button icon="sap-icon://delete" text="Delete" press="onDelete" type="Reject"/>
                                 </Toolbar>
                         </headerToolbar>
                                 <items>
-                                        <ObjectListItem  icon="sap-icon://product" intro="{NAME}" title="{PRODUCT_ID}" number="{PRICE}" numberUnit="{CURRENCY_CODE}">
+                                        <ObjectListItem icon="sap-icon://product" intro="{NAME}" title="{PRODUCT_ID}" number="{PRICE}" numberUnit="{CURRENCY_CODE}">
                                                 <!-- <attributes>
                                                         <ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
                                                         <ObjectAttribute title="Season" text="{season}"></ObjectAttribute>
@@ -31,6 +26,9 @@
                                                 <firstStatus>
                                                         <ObjectStatus text="Available" state="Success"></ObjectStatus>
                                                 </firstStatus> -->
+                                                <attributes>
+                                                        <ObjectAttribute title="Type" text="{CATEGORY}"/>
+                                                </attributes>
                                         </ObjectListItem>
                                         <!-- <DisplayListItem label="Dell Laptop" value="4GB RAM"></DisplayListItem>
                                         
@@ -71,6 +69,14 @@
                                 </items>
                         </List>
                 </content>
+        <footer>
+            <Toolbar width="100%" id="toolbar2">
+                <content>
+                    <ToolbarSpacer id="spacer1"/>
+                    <Button press="onPressMain" xmlns="sap.m" text="Add" id="button2" activeIcon="sap-icon://add" icon="sap-icon://add"/>
+                </content>
+            </Toolbar>
+        </footer>
         </Page>
 
 </mvc:View>

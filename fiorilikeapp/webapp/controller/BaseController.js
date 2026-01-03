@@ -5,8 +5,8 @@ sap.ui.define([
     return Controller.extend("sasu.controller.BaseController",{
         formatter:Formatter,
         extractPath: function(oEvent){
-            var fruitId = oEvent.getParameter("arguments").fruitId;
-            return '/fruits/' + fruitId;
+            var prodId = oEvent.getParameter("arguments").prodId;
+            return '/' + prodId;
         },
 
         readMessage: function(key, param1){

@@ -1,6 +1,6 @@
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
             <Table items="{
-                    path: '/supplier'
+                    path: '/To_Orders'
                 }" id="idTbl">
                 <headerToolbar>
                     <Toolbar >
@@ -10,25 +10,25 @@
                 </headerToolbar>
                 <columns>
                     <Column>
-                        <Text text="Name" />
+                        <Text text="Sales Order ID" />
                     </Column>
                     <Column>
-                        <Text text="City" />
+                        <Text text="Buyer Name" />
                     </Column>
                     <Column  minScreenWidth="Tablet" demandPopin="true">
-                        <Text text="Since When" />
+                        <Text text="Gross Amount" />
                     </Column>
                     <Column minScreenWidth="Tablet">
-                        <Text text="Person Name" />
+                        <Text text="Lifecycle Status" />
                     </Column>
                 </columns>
 
                 <items>
                     <ColumnListItem >
-                        <Text text="{name}"></Text>
-                        <Input value="{city}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
-                        <Text text="{sinceWhen}"></Text>
-                        <Link text="{person}"></Link>
+                        <Text text="{SO_ID}"></Text>
+                        <Input value="{BUYER_NAME}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+                        <Text text="{GROSS_AMOUNT}"></Text>
+                        <Link text="{LIFECYCLE_STATUS}"></Link>
                     </ColumnListItem>
                 </items>
             </Table>
